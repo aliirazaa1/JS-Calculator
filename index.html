@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="./Calculator-icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1 id="head">Calculator</h1>
+    <form action="javascript:void(0)">
+        <input type="textview" name="field" id="textField" placeholder="0.">
+        <br>
+    </form>
+    <form action="javascript:void(0)">
+
+        <button id="nC" class="r1" onclick="clean();">C</button>
+        <!-- <button id="nFact" class="r1" onclick="fact();">!</button> -->
+        <button id="nS" class="r1" onclick="sq();">x2</button>
+        <button id="back" class="r1" onclick="backk();">←</button>
+        <br>
+
+        <button id="n1" class="r2" onclick="insert('1')">1</button>
+        <button id="n2" class="r2" onclick="insert('2')">2</button>
+        <button id="n3" class="r2" onclick="insert('3')">3</button>
+        <button id="add" class="r2" onclick="insert('+')">+</button>
+        <br>
+
+        <button id="n4" class="r3" onclick="insert('4')">4</button>
+        <button id="n5" class="r3" onclick="insert('5')">5</button>
+        <button id="n6" class="r3" onclick="insert('6')">6</button>
+        <button id="sub=" class="r3" onclick="insert('-')">-</button>
+        <br>
+
+        <button id="n7" class="r4" onclick="insert('7')">7</button>
+        <button id="n8" class="r4" onclick="insert('8')">8</button>
+        <button id="n9" class="r4" onclick="insert('9')">9</button>
+        <button id="mul=" class="r4" onclick="insert('*')">*</button>
+        <br>
+
+        <button id="nf" class="r5" onclick="insert('.')">.</button>
+        <button id="n0" class="r5" onclick="insert('0')">0</button>
+        <button id="ne" class="r5" onclick="equal()">=</button>
+        <button id="div=" class="r5" onclick="insert('/')">/</button>
+        <br>
+    </form>
+</body>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</html>
